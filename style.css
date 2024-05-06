@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center; /* Header içindeki tüm içeriği ortala */
+}
+
+header h1 {
+    margin: 0; /* H1 başlığının kenar boşluğunu kaldır */
+    display: inline-block; /* H1 başlığını inline-block olarak ayarla */
+}
+
+nav {
+    margin-top: 15px; /* Örnek bir üst boşluk */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Başlıkları yatay olarak düzenle */
+    margin-left: 50px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* İlk öğenin sol kenar boşluğunu kaldır */
+}
+
+
+.menu-link {
+    color: #000000; /* Başlangıç rengi */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.4s ease; /* Renk değişiminde geçiş efekti */
+}
+
+.menu-link:hover {
+    color: #6d5858; /* İmleç üstüne gelindiğindeki renk */
+}
+
+.information-box {
+    width: 100%; /* Kutunun genişliği */
+    height: 30px; /* Kutunun yüksekliği */
+    background-color: #000000; /* Kutunun arka plan rengi (siyah) */
+    overflow: hidden; /* Taşan içeriği gizle */
+}
+
+.kayan-yazi {
+    color: #ffffff; /* Yazı rengi (beyaz) */
+    animation: scrolling 25s linear infinite; /* Kayan animasyon */
+    line-height: 30px; /* Yazıyı dikeyde ortala */
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
